@@ -17,6 +17,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>SpringSecurityBasic-01</module>
+        <module>SpringSecurityBasic-02</module>
     </modules>
 
     <properties>
