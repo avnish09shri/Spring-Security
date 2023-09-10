@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 @Configuration
 public class SecurityConfig {
 
-    /*@Bean
+    @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
 
         return http.authorizeHttpRequests((requests) -> requests
@@ -28,7 +28,7 @@ public class SecurityConfig {
                .httpBasic(Customizer.withDefaults()).build();
     }
 
-    *//*@Bean             //Approach 1
+    /*@Bean             //Approach 1
     public InMemoryUserDetailsManager userDetailsService(){
 
         UserDetails admin= User.withDefaultPasswordEncoder().username("admin").password("12345")
@@ -53,10 +53,10 @@ public class SecurityConfig {
         return  inMemoryUserDetailsManager;
     }*/
 
-    @Bean
+    /*@Bean            //using jdbcuserdetailsmanager
     public UserDetailsService userDetailsService(DataSource dataSource){
         return new JdbcUserDetailsManager(dataSource);
-    }
+    }*/
 
     @Bean
     public PasswordEncoder getPasswordEncoder(){
