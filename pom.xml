@@ -20,6 +20,7 @@
         <module>SpringSecurityBasic-02</module>
         <module>SpringSecurityBasic-03DefiningUsers</module>
         <module>SpringSecurityBasic-04PasswordEncoder</module>
+        <module>SpringSecurityBasic-05CustomAuthenticationProvider</module>
     </modules>
 
     <properties>
