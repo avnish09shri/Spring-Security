@@ -31,10 +31,10 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 
         Customer customer = customerRepository.findByEmail(authentication.getName()).orElseThrow(() -> new CustomerNotFoundException(authentication.getName()));
-        if(passwordEncoder.matches(authentication.getCredentials().toString(), customer.getPassword())) {
+        if(passwordEncoder.matches(authentication.getCredentials().toString(), customer.getPwd())) {
             List<GrantedAuthority> authorities = new ArrayList<>();
             authorities.add(new SimpleGrantedAuthority(customer.getRole()));
-            return new UsernamePasswordAuthenticationToken(customer.getEmail(), customer.getPassword(), authorities);
+            return new UsernamePasswordAuthenticationToken(customer.getEmail(), customer.getPwd(), authorities);
         }
         else{
             throw new BadCredentialsException("Invalid Credentials");
