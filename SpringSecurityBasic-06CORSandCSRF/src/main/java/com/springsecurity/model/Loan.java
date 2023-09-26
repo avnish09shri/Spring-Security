@@ -9,7 +9,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Table(name="loans")
 @Data
-public class Loans {
+public class Loan {
 	
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO,generator="native")
