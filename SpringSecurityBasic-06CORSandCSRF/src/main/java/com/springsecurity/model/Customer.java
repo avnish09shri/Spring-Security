@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.sql.Date;
+
 @Entity
 @Data
 public class Customer {
@@ -28,6 +30,6 @@ public class Customer {
     private String role;
 
     @Column(name = "create_dt")
-    private String createDt;
+    private Date createDt;
 
 }
