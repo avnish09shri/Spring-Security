@@ -20,7 +20,6 @@ public class AccountController {
 
     @GetMapping("/myAccount")
     public ResponseEntity<AccountResponse> getAccountDetails(@RequestParam int id){
-        accountServiceImpl.getAccountDetails(id);
         return new ResponseEntity<>(accountServiceImpl.getAccountDetails(id), HttpStatus.OK);
     }
 }

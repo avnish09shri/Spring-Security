@@ -44,8 +44,8 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
     }
 
     private List<GrantedAuthority> getGrantedAuthorities(Set<Authority> authorities) {
-        List<GrantedAuthority> grantedAuthorities=new ArrayList<>();
-        for(Authority authority:authorities){
+        List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
+        for (Authority authority : authorities) {
             grantedAuthorities.add(new SimpleGrantedAuthority(authority.getName()));
         }
         return grantedAuthorities;
