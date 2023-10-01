@@ -22,7 +22,7 @@
         <module>SpringSecurityBasic-04PasswordEncoder</module>
         <module>SpringSecurityBasic-05CustomAuthenticationProvider</module>
         <module>SpringSecurityBasic-06CORSandCSRF</module>
-        <module>SpringSecurityBasic-07AuthandAuthz</module>
+        <module>springsecsection7</module>
     </modules>
 
     <properties>
