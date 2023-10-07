@@ -23,6 +23,7 @@
         <module>SpringSecurityBasic-05CustomAuthenticationProvider</module>
         <module>SpringSecurityBasic-06CORSandCSRF</module>
         <module>SpringSecurity-07AuthandAuthz</module>
+        <module>SpringSecurityBasic-08CustomFilters</module>
     </modules>
 
     <properties>
