@@ -24,6 +24,7 @@
         <module>SpringSecurityBasic-06CORSandCSRF</module>
         <module>SpringSecurity-07AuthandAuthz</module>
         <module>SpringSecurityBasic-08CustomFilters</module>
+        <module>SpringSecurityBasic-09JWT</module>
     </modules>
 
     <properties>
