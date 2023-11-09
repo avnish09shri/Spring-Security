@@ -25,6 +25,7 @@
         <module>SpringSecurity-07AuthandAuthz</module>
         <module>SpringSecurityBasic-08CustomFilters</module>
         <module>SpringSecurityBasic-09JWT</module>
+        <module>SpringSecurityBasic-10MethodLevel</module>
     </modules>
 
     <properties>
